@@ -1,40 +1,43 @@
-/*HEADER*/
+* {
+  box-sizing: border-box;
+}
+
+/*HEADER SECTION*/
+
 header {
   background-color: #000;
   color: #fff;
 }
 
-.wrapper .header {
+.wrapper {
+  max-width: 940px;
+}
+
+header .wrapper {
   max-width: 940px;
   margin: 0 auto;
-  padding: 0 20px;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  padding: 0 auto;
 }
 
-header span {
-  font-size: 1.5rem;
-  font-weight: bold;
+header nav ul {
+display: flex;
+list-style: none;
+gap: 20px;
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-  padding: 0;
-  margin: 0;
+header nav a {
+  color: #fff;
+  text-decoration: none;
 }
 
-nav ul li {
-  display: inline-block;
-}
 
-/*HERO SECTION*/
+/* HERO SECTION */
+
 #hero {
   height: 600px;
-  background: url("../images/hands-typing.jpg") center/cover no repeat;
+  background-image: url("../images/hands-typing.jpg");
+  background-position: center;
+  background-size: cover;
   filter: grayscale(70%);
   display: flex;
   justify-content: center;
@@ -42,12 +45,17 @@ nav ul li {
   text-align: center;
 }
 
-#her0 h1 {
-max-width: 60%;
-background: rgba(0, 0, 0, 0.5);
-color: #fff;
-padding: 20px;
-font-size: 2.5rem;
-text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-border-radius: 5px;
+#hero h1 {
+  max-width: 60%;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-shadow: #fff;
+  color: #fff;
+}
+
+
+/* ABOUT ME SECTION */
+
+#about-me .wrapper {
+  max-width: 940px;
+
 }
