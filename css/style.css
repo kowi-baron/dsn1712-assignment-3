@@ -55,7 +55,12 @@ header nav a {
 
 /* ABOUT ME SECTION */
 
-#about-me .wrapper {
+#about-me {
   max-width: 940px;
+}
 
+#about-me .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
 }
