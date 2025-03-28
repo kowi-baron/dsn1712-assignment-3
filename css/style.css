@@ -1,6 +1,17 @@
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
+
+body {
+  background-color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.4;
+
+  margin: 0;
+}
+
 
 /*HEADER SECTION*/
 
@@ -16,7 +27,10 @@ header {
 header .wrapper {
   max-width: 940px;
   margin: 0 auto;
-  padding: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header nav ul {
@@ -55,12 +69,86 @@ header nav a {
 
 /* ABOUT ME SECTION */
 
-#about-me {
+
+
+/*SERVICE SECTION*/
+
+#services #article {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  background-color: #fff;
+  margin: auto;
+  
+}
+
+#services {
+ background-color: #fafafa;
+ padding: 50px 20px;
+}
+
+#services article {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 15px;
+}
+#services a:link,
+#services a:visited {
+  display: inline-block;
+  padding: .8em 1em;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid #000;
+  border-radius: 4px;
+
+}
+
+#services #article a:hover,
+#services #article a:focus {
+  background-color: #fff;
+  color: #000;
+}
+
+
+/* MY WORK SECTION */
+
+ 
+#work .wrapper {
   max-width: 940px;
 }
 
-#about-me .wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-end;
+#work h2, #work p {
+  text-align: center;
+}
+
+#work p {
+  text-align: center;
+}
+
+
+#work div:last-child img:nth-child(1) {
+  grid-area: img1;
+}
+#work div:last-child img:nth-child(2) {
+  grid-area: img2;
+}
+#work div:last-child img:nth-child(3) {
+  grid-area: img3;
+}
+#work div:last-child img:nth-child(4) {
+  grid-area: img4;
+}
+#work div:last-child img:nth-child(5) {
+  grid-area: img5;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* FOOTER */
+footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
 }
