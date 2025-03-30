@@ -1,8 +1,7 @@
 * {
   box-sizing: border-box;
-  padding: 0;
-  margin: 0;
 }
+
 
 body {
   background-color: #fff;
@@ -12,41 +11,44 @@ body {
   margin: 0;
 }
 
+img {
+  width: 90%;
+}
 
-/*HEADER SECTION*/
+
+
+
+/* HEADER SECTION */
+
+.wrapper {
+  max-width: 940px;
+  margin: 0 auto;
+}
 
 header {
   background-color: #000;
   color: #fff;
 }
 
-.wrapper {
-  max-width: 940px;
-}
-
 header .wrapper {
   max-width: 940px;
   margin: 0 auto;
-  padding: 10px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  padding: 0 auto;
 }
 
 header nav ul {
-display: flex;
-list-style: none;
-gap: 20px;
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  gap: 20px;
 }
 
-header nav a {
+header nav ul li a {
   color: #fff;
   text-decoration: none;
 }
 
-
 /* HERO SECTION */
-
 #hero {
   height: 600px;
   background-image: url("../images/hands-typing.jpg");
@@ -66,55 +68,11 @@ header nav a {
   color: #fff;
 }
 
-
-/* ABOUT ME SECTION */
-
-
+/*ABOUT ME SECTION*/
 
 /*SERVICE SECTION*/
 
-#services #article {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
-  background-color: #fff;
-  margin: auto;
-  
-}
-
-#services {
- background-color: #fafafa;
- padding: 50px 20px;
-}
-
-#services article {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 15px;
-}
-#services a:link,
-#services a:visited {
-  display: inline-block;
-  padding: .8em 1em;
-  background-color: #000;
-  color: #fff;
-  text-decoration: none;
-  border: 2px solid #000;
-  border-radius: 4px;
-
-}
-
-#services #article a:hover,
-#services #article a:focus {
-  background-color: #fff;
-  color: #000;
-}
-
-
-/* MY WORK SECTION */
-
- 
+/*MY WORK SECTION*/
 #work .wrapper {
   max-width: 940px;
 }
@@ -146,9 +104,18 @@ header nav a {
   object-fit: cover;
 }
 
+
+
+
 /* FOOTER */
 footer {
   background-color: #000;
   color: #fff;
   text-align: center;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
 }
