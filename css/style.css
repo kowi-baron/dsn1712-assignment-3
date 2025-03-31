@@ -60,7 +60,7 @@ header nav ul li a {
 #hero h1 {
   max-width: 60%;
   background-color: rgba(0, 0, 0, 0.5);
-  text-shadow: #fff;
+  text-shadow: #000;
   color: #fff;
 }
 
@@ -73,13 +73,13 @@ header nav ul li a {
 .about-me {
   display: flex;
   grid-template-columns: 1fr 1fr;
+  gap: 60px;
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
 
 .about-me, h2, p {
   text-align: center;
-  padding: auto;
 }
 
 
