@@ -12,7 +12,7 @@ body {
 }
 
 img {
-  width: 90%;
+  width: 80%;
 }
 
 /* HEADER SECTION */
@@ -66,10 +66,80 @@ header nav ul li a {
 }
 
 /*ABOUT ME SECTION*/
+#about-me {
+  display: flex;
+  width: 500px;
+  height: 450px;
+}
 
+#about-me:nth-child(1) {
+  text-align: center;
+}
+
+#about-me:nth-child(2) img {
+ justify-content: flex-end;  
+ background-image: url("images/bio-pic.jpg")
+}
 /*SERVICE SECTION*/
-
+#services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  width: 940px;
+  margin: 0 auto;
+ }
+ 
+ #section {
+ background-color: #fafafa;
+ padding: 2em;
+ }
+ 
+ #section #h2 {
+ margin-top: 0;
+ }
+ 
+ #services #article {
+ background-color: #fafafa;
+ padding: 1em;
+   
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ }
+ 
+ #services #article h3 {
+ margin: 0;
+ 
+ }
+ 
+ #services #article p {
+ margin-bottom: 2em;
+ }
+ 
+ #services a:link,
+ #services a:visited {
+   display: inline-block;
+   padding: .8em 1em;
+   background-color: #000;
+   color: #fff;
+   text-decoration: none;
+   border: 2px solid #000;
+   border-radius: 4px;
+   
+   margin-top: auto;
+ 
+ }
+ 
+ #services a:hover,
+ #services a:focus {
+   background-color: #fff;
+   color: #fff;
+ }
 /*MY WORK SECTION*/
+#work {
+display: flex;
+}
+
 #work .wrapper {
   max-width: 940px;
 }
@@ -78,26 +148,27 @@ header nav ul li a {
   text-align: center;
 }
 
-#work p {
-  text-align: center;
-}
-
 
 #work div:last-child img:nth-child(1) {
   grid-area: img1;
+  width: 30%;
+
 }
 #work div:last-child img:nth-child(2) {
   grid-area: img2;
+  width: 30%;
 }
 #work div:last-child img:nth-child(3) {
   grid-area: img3;
+  width: 30%;
 }
 #work div:last-child img:nth-child(4) {
   grid-area: img4;
+  width: 30%;
 }
 #work div:last-child img:nth-child(5) {
   grid-area: img5;
-  width: 100%;
+  width: 30%;
   object-fit: cover;
 }
 
